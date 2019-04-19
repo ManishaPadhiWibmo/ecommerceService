@@ -1,0 +1,19 @@
+
+1. getCategories -
+2. getItems -
+3. getItemStatus
+4. getItemDetail-
+1. PlaceOrders-
+4. getOrderDetail-
+5. getAllorders-
+1.addCategory-
+2.addItem-
+3.activateCategory
+4.activateItem
+5.updateItem
+6.deleteItem
+7.updateCategory
+8.deleteCategory
+
+
+post man Link :https://www.getpostman.com/collections/b3cadd39ab268d1a2d97

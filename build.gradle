@@ -1,0 +1,49 @@
+buildscript {
+    ext { springBootVersion = '2.1.0.RELEASE' }
+    repositories { mavenCentral() }
+    dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") }
+
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+jar {
+    baseName = 'ecommerce'
+    version = '0.0.1-SNAPSHOT'
+}
+
+springBoot {
+    buildInfo{
+        properties {
+            artifact = 'wc-retailservice'
+            version = '0.0.1'
+            name = 'retail API Server'
+        }
+    }
+}
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.aspectj:aspectjweaver')
+    compile('mysql:mysql-connector-java')
+    compile('org.springframework.boot:spring-boot-starter-jdbc')
+    compile('com.zaxxer:HikariCP:2.7.8')
+    
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+  
+ 
+}
+
+dependencyManagement {
+    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}

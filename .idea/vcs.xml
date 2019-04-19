@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/cabs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/cabs-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/gifting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/service-commons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/wc-batch-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/wc-notification-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_practise/workspace/wc-payment-service" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,365 @@
+{
+	"id": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+	"name": "Ecommerce-Service",
+	"description": "",
+	"order": [
+		"ef94c406-5ddf-6c72-98ce-14dc99649532",
+		"802c7645-36bb-897b-488b-ab4b4d95423a",
+		"d04adf17-8796-e5ce-5770-48d4ade427e8",
+		"bf83ec20-6236-5e61-20bd-3acb020fbed2",
+		"c0930b18-9096-b338-4181-8d337ac4c053",
+		"411acb14-3215-157b-2038-e0a893581f04",
+		"3775a2f5-7e7f-f0e3-fc19-82575c2e0474",
+		"dfad1953-114c-47d7-a3b0-37975abc25cb",
+		"23a664ba-e4ed-55b2-1432-da59095225cf",
+		"c4d8ddb6-e43d-cfbd-be04-1805f3a6bddf",
+		"d88b2b5c-0ea9-2c6b-afe7-dc8dcc1780a5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1555692054440,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "23a664ba-e4ed-55b2-1432-da59095225cf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/placeOrder",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "place order",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555696484427,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"categoryId\":2,\n\t\"itemId\":1,\n\t\t\"itemName\":\"shirt\",\n\t\t\"categoryName\":\"Dress\",\n\t\t\"status\":\"Success\",\n\t\t\"price\":200.00,\n\t\t\"invoiceNo\":\"123423\",\n\t\t\"dateOfOrder\": \"120319\"\n\t\n}"
+		},
+		{
+			"id": "3775a2f5-7e7f-f0e3-fc19-82575c2e0474",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/items/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "addedItem ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555694441557,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"categoryId\":\"2\",\n\t\"name\":\"trouser\",\n\t\t\"status\":\"available\"\n\t\n}"
+		},
+		{
+			"id": "411acb14-3215-157b-2038-e0a893581f04",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/item/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get Item detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555694087299,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		},
+		{
+			"id": "802c7645-36bb-897b-488b-ab4b4d95423a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/categories",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get Category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555692315814,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		},
+		{
+			"id": "bf83ec20-6236-5e61-20bd-3acb020fbed2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/categories/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "delete Category detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555692491872,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		},
+		{
+			"id": "c0930b18-9096-b338-4181-8d337ac4c053",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/items/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get Items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555693958003,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		},
+		{
+			"id": "c4d8ddb6-e43d-cfbd-be04-1805f3a6bddf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/orders/manisha@gmail.com",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get Orders per customer",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555697054406,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"categoryId\":2,\n\t\"itemId\":1,\n\t\t\"itemName\":\"shirt\",\n\t\t\"categoryName\":\"Dress\",\n\t\t\"status\":\"Success\",\n\t\t\"price\":200.00,\n\t\t\"invoiceNo\":\"123423\",\n\t\t\"dateOfOrder\": \"120319\"\n\t\n}"
+		},
+		{
+			"id": "d04adf17-8796-e5ce-5770-48d4ade427e8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/categories/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get Category detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555692362076,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		},
+		{
+			"id": "d88b2b5c-0ea9-2c6b-afe7-dc8dcc1780a5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/order/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get order Detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555697119964,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"categoryId\":2,\n\t\"itemId\":1,\n\t\t\"itemName\":\"shirt\",\n\t\t\"categoryName\":\"Dress\",\n\t\t\"status\":\"Success\",\n\t\t\"price\":200.00,\n\t\t\"invoiceNo\":\"123423\",\n\t\t\"dateOfOrder\": \"120319\"\n\t\n}"
+		},
+		{
+			"id": "dfad1953-114c-47d7-a3b0-37975abc25cb",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/item/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "delete Item",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555694609801,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ef94c406-5ddf-6c72-98ce-14dc99649532",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/category/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0946af8a-bf2a-2f8b-f90e-f78fb34cb19f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Add Category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1555692058301,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"name\":\"cosmetics\",\n\t\"status\":\"active\"\n\t\n}"
+		}
+	]
+}
